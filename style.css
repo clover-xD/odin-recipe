@@ -12,9 +12,9 @@
 /* CSS RESET END */
 
 .logo {
-    text-align: center;
-    margin-bottom: 0;
-    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
