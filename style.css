@@ -1,8 +1,15 @@
-* {
+/* CSS RESET  */
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+}
+
+* {
     padding: 0;
     margin: 0;
 }
+/* CSS RESET END */
 
 .logo {
     text-align: center;
@@ -12,15 +19,21 @@
 
 body {
     padding: 30px;
+    /* BG Gradient */
+    /* background: linear-gradient( 90deg, #effaff 0%, #d9e7ff 100% ); */
 }
 
-h1 {
+.content-title {
     text-align: center;
-    margin-top: 0;
-    padding-top: 0;
+    font-size: 64px;
+    /* Text Gradient */
+    background: -webkit-linear-gradient( 45deg, #09009f, #00ff94 80% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
 }
 
-ul {
+.main-list ul {
     text-align: center;
     list-style: none;
 }
@@ -28,5 +41,40 @@ ul {
 a {
     text-decoration: none;
     color: black;
+
+}
+
+.content-title.recipe {
+    font-size: 32px;
+}
+
+img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* How to Center Image */
+.box {
+    width: 80%;
+    min-height: 50vh;
+    margin: auto;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* not really needed with auto margin on img */
+}
+
+.box img {
+    display: block;
+    width: 80%;
+    min-width: 100px;
+    max-width: 600px; /* actual image width */
+    height: auto; /* maintain aspect ratio */
+    margin: auto; /* optional centering of image */
+}
+/* How to Center Image End */
+
+.main-container {
 
 }
