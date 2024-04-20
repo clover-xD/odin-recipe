@@ -27,7 +27,7 @@ body {
     text-align: center;
     font-size: 64px;
     /* Text Gradient */
-    background: -webkit-linear-gradient( 45deg, #09009f, #00ff94 80% );
+    background: linear-gradient( 45deg, #09009f, #00ff94 80% );
     background-clip: text;
     -webkit-text-fill-color: transparent;
     
@@ -48,11 +48,6 @@ a {
     font-size: 32px;
 }
 
-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 /* How to Center Image */
 .box {
@@ -74,3 +69,30 @@ img {
     margin: auto; /* optional centering of image */
 }
 /* How to Center Image End */
+
+.main-container {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding: 5px;
+    line-height: 1.9;
+    /* color: blue; */
+}
+
+.main-container ul,
+.main-container ol {
+    list-style: none;
+}
+
+/* test */
+h3 {
+    letter-spacing: 5px;
+    font-size: 24px;
+    background: linear-gradient( 45deg, #09009f, #00ff94 80% );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 25%;
+}
+/* test end */
